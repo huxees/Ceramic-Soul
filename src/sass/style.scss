@@ -1,3 +1,9 @@
+@use "/src/sass/libs/modern-normalize.min.css";
+@use "/src/sass/libs/fontello.css";
+
+@use "/src/sass/base/variables.scss" as *;
+// @use "/src/sass/pxtorem.scss" as *;
+
 h1,
 h2,
 h3,
@@ -48,4 +54,10 @@ img {
 html {
     font-family: "Barlow", sans-serif;
     scroll-behavior: smooth;
+}
+
+span {
+    // font-size: rem(32); --**это для файла с функцией, которая вычисляет rem, pxtorem.scss**--.
+    font-size: 32px;
+    color: $ui-error;
 }
