@@ -12,12 +12,27 @@
         <link 
             href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,400;0,500;1,400&display=swap" 
             rel="stylesheet">
-        
+        <link rel="stylesheet" href="/src/sass/style.scss">
     </head>
     <body>
-        <h1>qwerty</h1>
-        <span class="icon-pinterest-circled"></span>
+        <section id="promo" class="promo">
+            <div class="container">
+                <div class="header">
+                    <!-- <div class="icon-menu"></div> -->
+                     <div class="burger"><span></span><span></span><span></span></div>
+                    <a href="#promo" class="header__logo"><img src="/src/logo/logo.png" alt="logo"></a>
+                    <div class="header__icons">
+                        <a href="#"><span class="icon-search"></span></a>
+                        <a href="#"><span class="icon-shopping-bag"></span></a>
+                    </div>
+                </div>
 
+                <div class="title-h1-italic promo__title">make your dream come true
+                or decorate your home</div>
+                <img src="/src/img/promo/ceramic-vase.jpg" alt="ceramic vase" class="promo__img"> 
+                <button class="btn-default promo__btn">shop now</button>            
+            </div>
+        </section>
         <script type="module" src="/src/js/script.js"></script>
     </body>
 </html>
