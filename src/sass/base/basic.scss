@@ -55,3 +55,31 @@ html {
 body {
     background-color: $Light;
 }
+
+.container {
+    width: 100%;
+    padding: 0 10px;
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+        // width: 100%;
+        // padding: 0 24px; ::в более больших размерах необхоимо прописывать так, как ниже::
+
+        max-width: 720px;
+        padding: 0px;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    .container {
+        min-width: 1440px;
+    }
+}

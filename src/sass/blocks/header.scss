@@ -7,8 +7,10 @@
     }
 
     &__logo {
-        width: 100px;
-        height: 100px;
+        img {
+            width: 100px;
+            height: 100px;
+        }
     }
     
     &__icons {
@@ -47,10 +49,7 @@
         border: 1px solid $Dark;
         grid-column: 10px;
     }    
-    
-
 }
-
 
 @media screen and (min-width: 768px) {
     .header {
@@ -78,6 +77,25 @@
 
     .burger {
         visibility: hidden;
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    .header {
+        &__logo {
+            img {
+                width: 150px;
+                height: 150px;   
+            }
+        }
+
+        &__nav {
+            margin-top: 36px;
+
+            ul {
+                gap: 60px;
+            }
+        }
     }
 }
 
